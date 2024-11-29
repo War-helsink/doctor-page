@@ -1,8 +1,19 @@
 ---
 import Layout from "layouts/Layout.astro";
-import CookieNote from "components/CookieNote.astro"
+
+import FirstSection from "components/FirstSection.astro";
+import ServicesSection from "components/ServicesSection.astro";
+import CookieNote from "components/CookieBanner.astro";
+import Contact from "components/Contact.astro";
 ---
 
-<Layout title="" description="" keywords="">
-	<CookieNote />
+<Layout
+  title="Clínica Dermatológica en Madrid - Dr. Julián Martínez | Belleza Total"
+  description="Descubre tratamientos dermatológicos avanzados con el Dr. Julián Martínez en Madrid. Especialista en rejuvenecimiento facial, eliminación de manchas, cicatrices y más. Cuida tu piel con soluciones personalizadas y seguras en Clínica Belleza Total."
+  keywords="Clínica dermatológica Madrid, Dr. Julián Martínez, Dermatólogo estético en Madrid, Tratamientos antiacné, Rejuvenecimiento facial Madrid, Eliminación de cicatrices y manchas, Cuidado de la piel, Dermatología avanzada España, Belleza y estética en Madrid, Clínica Belleza Total"
+>
+  <FirstSection />
+  <ServicesSection />
+  <Contact />
+  <CookieNote />
 </Layout>

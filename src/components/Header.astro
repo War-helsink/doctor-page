@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<header
+  class="bg-custom-dark text-custom-light py-4 px-6 flex items-center justify-between sticky top-0 z-50"
+>
+  <div class="flex items-center space-x-4">
+    <a href="/" class="hover:opacity-85 text-lg">
+      <h1 class="text-3xl font-semibold">Dr. Julián Martínez</h1>
+    </a>
+  </div>
+
+  <div class="flex items-center space-x-6">
+    <a href="tel:+34123456789" class="hover:opacity-85">
+      <Icon name="mdi:phone" class="w-6 h-6" />
+    </a>
+
+    <a href="mailto:info@clinicabelleza.com" class="hover:opacity-85">
+      <Icon name="mdi:email" class="w-6 h-6" />
+    </a>
+  </div>
+</header>

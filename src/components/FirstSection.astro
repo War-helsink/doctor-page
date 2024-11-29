@@ -1,0 +1,35 @@
+---
+import { Picture } from "astro:assets";
+import HeroImage from "assets/img/cosmetologist.jpg";
+---
+
+<section
+  class="relative w-full h-screen flex items-center justify-center text-center text-custom-light"
+>
+  <Picture
+    src={HeroImage}
+    alt="Procedimiento"
+    widths={[320, 640, 1024, 1280, 1920]}
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw"
+    formats={["avif", "webp", "jpg"]}
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+      Dr. Julián Martínez
+    </h1>
+    <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium mb-6">
+      Experto en Dermatología Avanzada y Estética
+    </h2>
+    <p class="text-lg sm:text-xl lg:text-2xl mb-6">
+      Cuida tu piel con tratamientos personalizados y seguros en Madrid.
+    </p>
+    <a
+      href="#contact"
+      class="inline-block px-6 py-3 bg-custom-light text-custom-dark text-lg font-semibold rounded-full transition"
+    >
+      Reserva tu Consulta
+    </a>
+  </div>
+</section>
