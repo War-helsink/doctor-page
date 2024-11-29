@@ -1,37 +1,38 @@
 export const services = [
 	{
-		label: "Consulta General",
+		label: "Tratamiento Antiacné",
 		description:
-			"Revisión completa de tu vista y diagnóstico de posibles problemas.",
-		price: 35,
-	},
-	{
-		label: "Cirugía de Cataratas",
-		description:
-			"Procedimiento y seguimiento postoperatorio para asegurar una recuperación óptima.",
-		price: 55,
-	},
-	{
-		label: "Exámenes de Retina",
-		description: "Diagnóstico y tratamiento para preservar tu visión.",
-		price: 45,
-	},
-	{
-		label: "Examen de Glaucoma",
-		description:
-			"Evaluación para detectar presión ocular elevada y prevenir el daño al nervio óptico.",
+			"Soluciones personalizadas para controlar el acné y mejorar la salud de la piel.",
 		price: 50,
 	},
 	{
-		label: "Cirugía Refractiva (Lasik)",
+		label: "Rejuvenecimiento Facial con Láser",
 		description:
-			"Procedimiento quirúrgico para corregir miopía, hipermetropía y astigmatismo.",
-		price: 100,
+			"Tratamiento de láser para reducir signos de envejecimiento y mejorar la textura de la piel.",
+		price: 120,
 	},
 	{
-		label: "Examen de Visión Nocturna",
+		label: "Eliminación de Manchas y Pigmentaciones",
 		description:
-			"Evaluación especializada para detectar dificultades visuales al conducir de noche.",
+			"Procedimientos para eliminar manchas oscuras y pigmentaciones en la piel.",
+		price: 70,
+	},
+	{
+		label: "Rellenos Dérmicos",
+		description:
+			"Aplicación de rellenos dérmicos para reducir arrugas y mejorar el volumen facial.",
+		price: 150,
+	},
+	{
+		label: "Toxina Botulínica (Botox)",
+		description:
+			"Aplicación de Botox para reducir arrugas y líneas de expresión.",
+		price: 120,
+	},
+	{
+		label: "Asesoramiento Integral de Cuidado de la Piel",
+		description:
+			"Consultas personalizadas para mejorar la salud de la piel con productos adecuados.",
 		price: 40,
 	},
 ];

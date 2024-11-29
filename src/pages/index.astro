@@ -1,8 +1,10 @@
 ---
 import Layout from "layouts/Layout.astro";
-
 import FirstSection from "components/FirstSection.astro";
+import AboutDoctor from "components/AboutDoctor.astro";
 import ServicesSection from "components/ServicesSection.astro";
+import Info from "components/Info.astro";
+import Prevention from "components/Prevention.astro";
 import CookieNote from "components/CookieBanner.astro";
 import Contact from "components/Contact.astro";
 ---
@@ -13,7 +15,13 @@ import Contact from "components/Contact.astro";
   keywords="Clínica dermatológica Madrid, Dr. Julián Martínez, Dermatólogo estético en Madrid, Tratamientos antiacné, Rejuvenecimiento facial Madrid, Eliminación de cicatrices y manchas, Cuidado de la piel, Dermatología avanzada España, Belleza y estética en Madrid, Clínica Belleza Total"
 >
   <FirstSection />
+
+  <AboutDoctor />
   <ServicesSection />
+
+  <Info />
+  <Prevention />
+  
   <Contact />
   <CookieNote />
 </Layout>

@@ -1,0 +1,55 @@
+---
+import { Picture } from "astro:assets";
+import servicesBackground from "assets/img/services-background.jpg";
+
+const doctorName = "Dr. Julián Martínez";
+const doctorSpecialty = "Especialista en Dermatología y Estética Médica";
+const doctorExperience =
+  "Con más de 15 años de experiencia, el Dr. Julián Martínez se ha dedicado a brindar tratamientos personalizados y efectivos para mejorar la salud y belleza de la piel.";
+const doctorPhilosophy =
+  "El cuidado de la piel no solo mejora la apariencia, sino también la confianza y bienestar de cada persona. Mi misión es ofrecer soluciones seguras y efectivas que respeten la individualidad de cada paciente.";
+const services = [
+  "Tratamientos antiacné y cicatrices",
+  "Rejuvenecimiento facial con láser",
+  "Eliminación de manchas y pigmentaciones",
+  "Rellenos dérmicos y aplicación de toxina botulínica",
+  "Asesoramiento integral para el cuidado de la piel",
+];
+---
+
+<section id="experience-doctor" class="py-16 text-custom-dark">
+  <div class="container mx-auto px-4">
+    <div class="lg:flex">
+      <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+        <Picture
+          src={servicesBackground}
+          widths={[3000, 1920, 1280]}
+          sizes="(max-width: 1280px) 100vw, (max-width: 1920px) 100vw, 100vw"
+          formats={["avif", "webp"]}
+          alt=""
+          class="rounded-lg shadow-lg w-3/4 mx-auto lg:w-full"
+        />
+      </div>
+
+      <div class="lg:w-1/2 px-4">
+        <h2 class="text-4xl font-semibold mb-6">
+          Recupere la Salud de Su Piel con {doctorName}
+        </h2>
+        <h3 class="text-2xl font-medium mt-4">
+          {doctorSpecialty}
+        </h3>
+        <p class="text-lg mt-4">
+          {doctorExperience}
+        </p>
+        <h4 class="text-xl font-semibold mt-6">Servicios Destacados</h4>
+        <ul class="list-disc list-inside mt-2">
+          {services.map((service) => <li>{service}</li>)}
+        </ul>
+        <h4 class="text-xl font-semibold mt-6">Filosofía de Trabajo</h4>
+        <p class="text-lg mt-2">
+          {doctorPhilosophy}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,104 @@
+---
+const DataCollectionLink = "/data-collection";
+const PrivacyLink = "/privacy";
+---
+
+<div class="bg-white p-6 rounded-lg shadow-xl">
+  <h3 class="text-2xl font-semibold mb-4 text-center">Déjanos tu mensaje</h3>
+  <form action="#" method="POST" class="space-y-4">
+    <!-- Nombre -->
+    <div class="flex flex-col">
+      <label for="name" class="mb-2">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Tu nombre completo"
+      />
+    </div>
+
+    <!-- Correo Electrónico -->
+    <div class="flex flex-col">
+      <label for="email" class="mb-2">Correo Electrónico</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Tu email"
+      />
+    </div>
+
+    <!-- Teléfono -->
+    <div class="flex flex-col">
+      <label for="phone" class="mb-2">Teléfono</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:text-custom-secondary"
+        placeholder="Tu número de teléfono"
+      />
+    </div>
+
+    <!-- Fecha de Cita -->
+    <div class="flex flex-col">
+      <label for="appointmentDate" class="mb-2">Fecha de la cita</label>
+      <input
+        type="date"
+        id="appointmentDate"
+        name="appointmentDate"
+        required
+        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:text-custom-secondary"
+      />
+    </div>
+
+    <!-- Aceptación de Políticas -->
+    <div class="flex items-center">
+      <input
+        type="checkbox"
+        id="dataConsent"
+        name="dataConsent"
+        required
+        class="mr-2"
+      />
+      <label for="dataConsent" class="text-sm text-gray-600">
+        Acepto la recopilación y el procesamiento de mis datos personales. Para
+        obtener más información, consulte la
+        <a
+          href={DataCollectionLink}
+          target="_blank"
+          class="text-custom-secondary">Política de Recopilación de Datos</a
+        > y la
+        <a
+          href={PrivacyLink}
+          target="_blank"
+          class="text-custom-secondary">Política de Privacidad</a
+        >.
+      </label>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="flex flex-col">
+      <label for="message" class="mb-2">Mensaje</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:text-custom-secondary"
+        placeholder="Escribe tu mensaje aquí..."></textarea>
+    </div>
+
+    <!-- Botón de Enviar -->
+    <button
+      type="submit"
+      class="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 focus:outline-none focus:ring-2 focus:text-custom-light"
+    >
+      Enviar Mensaje
+    </button>
+  </form>
+</div>
